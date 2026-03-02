@@ -10,6 +10,7 @@
   </style>
 </head>
 <body>
+
   <model-viewer 
     src="cittadella_gozo_3d-v1.glb" 
     ar 
@@ -17,10 +18,15 @@
     camera-controls 
     auto-rotate 
     shadow-intensity="1"
+    camera-orbit="0deg 75deg 105%" 
+    min-camera-orbit="auto auto 5%"
     alt="Modello 3D Cittadella Gozo">
+    
     <button slot="ar-button" style="background-color: white; border-radius: 8px; border: 1px solid #ccc; position: absolute; top: 20px; right: 20px; padding: 12px; font-weight: bold;">
       Vedi in AR
     </button>
+    
   </model-viewer>
+
 </body>
 </html>
