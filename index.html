@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cittadella di Gozo in AR</title>
   <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
   <style>
     body { margin: 0; padding: 0; width: 100vw; height: 100vh; overflow: hidden; background-color: #ffffff; }
@@ -14,15 +15,17 @@
   <model-viewer 
     src="cittadella_gozo_3d-v1.glb" 
     ar 
-    ar-modes="webxr scene-viewer quick-look" 
+    ar-modes="scene-viewer webxr quick-look" 
     camera-controls 
     auto-rotate 
-    shadow-intensity="1"
+    shadow-intensity="1.5"
+    exposure="1.2"
+    environment-image="neutral"
     camera-orbit="0deg 75deg 105%" 
     min-camera-orbit="auto auto 5%"
     alt="Modello 3D Cittadella Gozo">
     
-    <button slot="ar-button" style="background-color: white; border-radius: 8px; border: 1px solid #ccc; position: absolute; top: 20px; right: 20px; padding: 12px; font-weight: bold;">
+    <button slot="ar-button" style="background-color: white; border-radius: 8px; border: 1px solid #ccc; position: absolute; top: 20px; right: 20px; padding: 12px; font-weight: bold; cursor: pointer;">
       Vedi in AR
     </button>
     
